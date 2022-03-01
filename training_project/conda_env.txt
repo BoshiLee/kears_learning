@@ -1,0 +1,6 @@
+conda activate intretech_boshi
+conda deactivivate
+
+
+# 如果忘記名稱
+conda env list
