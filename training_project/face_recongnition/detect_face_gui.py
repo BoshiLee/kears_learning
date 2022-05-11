@@ -14,7 +14,7 @@ caffemodel = 'res10_300x300_ssd_iter_140000.caffemodel'
 print("[INFO] loading model...")
 net = cv2.dnn.readNetFromCaffe(prototxt, caffemodel)
 print("[INFO] Select input image ...")
-inputfile = r"./data/test9.jpg"
+inputfile = r"./dataset/test9.jpg"
 
 # load the input image and construct an input blob for the image
 # by resizing to a fixed 300x300 pixels and then normalizing it

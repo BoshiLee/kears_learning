@@ -12,14 +12,14 @@ zip_ref.extractall()
 zip_ref.close()
 
 face_cascade = cv2.CascadeClassifier('haar.xml')
-f = cv2.imread("data/train/ben_afflek/httpwwwallposterscomimagesPostersPFjpg.jpg")
+f = cv2.imread("dataset/train/ben_afflek/httpwwwallposterscomimagesPostersPFjpg.jpg")
 faces = face_cascade.detectMultiScale(f,1.3,5)
 print(faces)
 for x,y,w,h in faces:
     plt.imshow(f[y:y+h, x:x+w])
 
 face_cascade = cv2.CascadeClassifier('haar.xml')
-dirs = "data/train/"
+dirs = "dataset/train/"
 img_size = 60
 
 data = []
@@ -44,7 +44,7 @@ for i in range(9):
     plt.subplot(3,3,i+1)
     plt.imshow(row.image)
 
-dirs = "data/val/"
+dirs = "dataset/val/"
 
 data = []
 for name in os.listdir(dirs):

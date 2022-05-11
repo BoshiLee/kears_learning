@@ -33,7 +33,7 @@ from keras import layers
 from tensorflow import keras
 
 """
-## Prepare the Fashion-MNIST data
+## Prepare the Fashion-MNIST dataset
 
 To demonstrate how to train WGAN-GP, we will be using the
 [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset. Each
